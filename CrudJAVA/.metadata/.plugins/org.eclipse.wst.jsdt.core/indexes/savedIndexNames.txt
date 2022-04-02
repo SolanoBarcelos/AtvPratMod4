@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\solan\OneDrive\Área de Trabalho\WorkSpace Eclipse\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+4114818725.index
+2850202891.index
+18681299.index
+3263329967.index
+3090509549.index
+1269727740.index

@@ -1,0 +1,54 @@
+package dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.List;
+
+import db.MySQLConnection;
+import model.Destino;
+
+public class DestinoDao implements CRUD {
+	
+	private static Connection connection = MySQLConnection.createConnection();
+	private static String sql;
+
+	public static void create(Destino destino) {
+		sql = "INSERT INTO clientes VALUES(nuul, ?, ?, ?)";
+		
+		try {
+			
+			PreparedStatement preparedStatament = connection.prepareStatement(sql);
+			
+			preparedStatament.setString(1, destino.getNome());
+			preparedStatament.setString(1, destino.getCidade());
+			preparedStatament.setString(1, destino.getEstado());
+			
+			preparedStatament.executeUpdate();
+			
+			System.out.println("--correct insert on database");
+
+			
+		} catch(SQLException e){
+			
+			System.out.println("--incorrect insert on database" + e.getMessage());
+			
+		}
+	}
+	
+	public static void delete(int destinoId) {
+		
+	}
+	
+	public static List<Destino> find(String pesquisa) {
+		return null;
+	}
+	
+	public static Destino findByPK(int clienteId) {
+		return null;
+	}
+	
+	public static void update(Destino destino) {
+		
+	}
+}

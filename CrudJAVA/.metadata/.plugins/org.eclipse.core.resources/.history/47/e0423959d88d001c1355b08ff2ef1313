@@ -1,0 +1,38 @@
+package controllers;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import dao.DestinoDao;
+import model.Destino;
+
+
+@WebServlet("/DestinoUpdate")
+public class DestinoSelectFindAndUpdate extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+
+    public DestinoSelectFindAndUpdate() {
+        super();
+
+    }
+
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+		int destinoId = Integer.parseInt(request.getParameter("destinoId"));
+	
+		Destino destino = DestinoDao.findByPK(destinoId);
+	}
+
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+		doGet(request, response);
+	}
+
+}
