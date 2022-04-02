@@ -1,4 +1,4 @@
-# Atividade Pratica Módulo 4
+# Atividade Prática Módulo 4
 
 ## Projeto RecodePro
 
