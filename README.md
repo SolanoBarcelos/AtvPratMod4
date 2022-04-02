@@ -3,8 +3,9 @@
 ## Projeto RecodePro
 
 #### Atividade pratica individual proposta no final do módulo 4 do curso de Desenvolvimento Web Full Stack Jr. do Projeto Recode Pro.
+#### Desenvolver site de uma agência de viagens com paginas Home, Destinos, Promoções e Contato.
 
-#### Requisições da entrega:
+#### Requisições para entrega:
 
 - Front End em React.
 - Back End com Crud em JAVA.
