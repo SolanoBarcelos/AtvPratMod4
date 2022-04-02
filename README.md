@@ -10,4 +10,4 @@
 - Back End com Crud em JAVA.
 - Persistência de dados em SQL.
 
-OBS: O video do Front End funcinal e responsivo sem encontra no repositório para documentação.
+OBS: O video do Front End funcinal e responsivo esta no repositório para documentação do projeto.
